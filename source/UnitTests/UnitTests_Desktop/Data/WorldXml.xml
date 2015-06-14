@@ -1,0 +1,24 @@
+<world name="Level1">
+	<sector name="Treasury">
+		<integer name="weapons" value="2" />
+		
+		<entity name="Relic" class="LockedChest">
+			<integer name="skill" value="3" />
+		</entity>
+		
+		<entity name="Hero" class="Shujinko">
+			<integer name="level" value="10" />
+			<integer name="health" value="100" />
+		</entity>
+		
+		<entity name="Guardian" class="Kaijuu">
+			<integer name="health" value="5000" />
+			<string name="class"  value="Chimera" />
+		</entity>
+	</sector>
+
+	<sector name="Coming soon" />
+	
+	<integer name="screen width" value="1600" />
+	<integer name="screen height" value="900" />
+</world>

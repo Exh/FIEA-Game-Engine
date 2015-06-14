@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{1EFDB611-C84E-442E-A497-DA9B834339DD}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Library</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\</IntDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>$(ProjectDir)bin\$(Configuration)\</OutDir>
+    <IntDir>$(ProjectDir)obj\$(Configuration)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level4</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4100;4481</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\external\OpenGL\glm;$(SolutionDir)..\external\Expat\include;%(AdditionalIncludeDirectories);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <Verbose>true</Verbose>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <PreLinkEvent>
+      <Command>xcopy /s /e /y "$(SolutionDir)..\external\Expat\lib\expatd.pdb" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level4</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <TreatWarningAsError>true</TreatWarningAsError>
+      <DisableSpecificWarnings>4100;4481</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>pch.h</PrecompiledHeaderFile>
+      <ProgramDataBaseFileName>$(OutDir)$(TargetName).pdb</ProgramDataBaseFileName>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <AdditionalIncludeDirectories>$(SolutionDir)..\external\OpenGL\glm;$(SolutionDir)..\external\Expat\include;;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>
+      </ForcedIncludeFiles>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+    <Lib>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>
+      </AdditionalDependencies>
+      <Verbose>true</Verbose>
+    </Lib>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+    <PreLinkEvent>
+      <Command>xcopy /s /e /y "$(SolutionDir)..\external\Expat\lib\expat.pdb" "$(OutDir)"</Command>
+    </PreLinkEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Action.h" />
+    <ClInclude Include="ActionEvent.h" />
+    <ClInclude Include="ActionIf.h" />
+    <ClInclude Include="ActionList.h" />
+    <ClInclude Include="Attributed.h" />
+    <ClInclude Include="ConcreteFactory.h" />
+    <ClInclude Include="Datum.h" />
+    <ClInclude Include="DecrementAction.h" />
+    <ClInclude Include="DefaultHashFunctor.h" />
+    <ClInclude Include="DefaultVectorFunctor.h" />
+    <ClInclude Include="Entity.h" />
+    <ClInclude Include="Event.h" />
+    <ClInclude Include="EventMessageAttributed.h" />
+    <ClInclude Include="EventPublisher.h" />
+    <ClInclude Include="EventQueue.h" />
+    <ClInclude Include="EventSubscriber.h" />
+    <ClInclude Include="Factory.h" />
+    <ClInclude Include="GameClock.h" />
+    <ClInclude Include="GameTime.h" />
+    <ClInclude Include="hashmap.h" />
+    <ClInclude Include="IncrementAction.h" />
+    <ClInclude Include="IXmlParseHelper.h" />
+    <ClInclude Include="Operator.h" />
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Reaction.h" />
+    <ClInclude Include="ReactionAttributed.h" />
+    <ClInclude Include="RTTI.h" />
+    <ClInclude Include="Scope.h" />
+    <ClInclude Include="Sector.h" />
+    <ClInclude Include="Slist.h" />
+    <ClInclude Include="stack.h" />
+    <ClInclude Include="TableSharedData.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="vector.h" />
+    <ClInclude Include="World.h" />
+    <ClInclude Include="WorldState.h" />
+    <ClInclude Include="XmlParseHelperAction.h" />
+    <ClInclude Include="XmlParseHelperTable.h" />
+    <ClInclude Include="XmlParseMaster.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Action.cpp" />
+    <ClCompile Include="ActionEvent.cpp" />
+    <ClCompile Include="ActionIf.cpp" />
+    <ClCompile Include="ActionList.cpp" />
+    <ClCompile Include="Attributed.cpp" />
+    <ClCompile Include="Datum.cpp" />
+    <ClCompile Include="DecrementAction.cpp" />
+    <ClCompile Include="DefaultVectorFunctor.cpp" />
+    <ClCompile Include="Entity.cpp" />
+    <ClCompile Include="EventMessageAttributed.cpp" />
+    <ClCompile Include="EventPublisher.cpp" />
+    <ClCompile Include="EventQueue.cpp" />
+    <ClCompile Include="GameClock.cpp" />
+    <ClCompile Include="GameTime.cpp" />
+    <ClCompile Include="IncrementAction.cpp" />
+    <ClCompile Include="IXmlParseHelper.cpp" />
+    <ClCompile Include="Operator.cpp" />
+    <ClCompile Include="pch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">pch.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">pch.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Reaction.cpp" />
+    <ClCompile Include="ReactionAttributed.cpp" />
+    <ClCompile Include="Scope.cpp" />
+    <ClCompile Include="Sector.cpp" />
+    <ClCompile Include="TableSharedData.cpp" />
+    <ClCompile Include="World.cpp" />
+    <ClCompile Include="WorldState.cpp" />
+    <ClCompile Include="XmlParseHelperAction.cpp" />
+    <ClCompile Include="XmlParseHelperTable.cpp" />
+    <ClCompile Include="XmlParseMaster.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Datum.inl" />
+    <None Include="DefaultHashFunctor.inl" />
+    <None Include="Event.inl" />
+    <None Include="Factory.inl" />
+    <None Include="hashmap.inl" />
+    <None Include="Slist.inl" />
+    <None Include="stack.inl" />
+    <None Include="vector.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

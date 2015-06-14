@@ -1,0 +1,21 @@
+<asset>
+<model path="resources">
+<mesh name="left arm" collider="capsule">
+<bodyPart>arm</bodyPart>
+<position>
+<x>1</x>
+<y>1</y>
+<z>1</z>
+</position>
+</mesh>
+
+<mesh name="right arm" collider="capsule">
+<bodyPart>arm</bodyPart>
+<position>
+<x>-1</x>
+<y>-1</y>
+<z>-1</z>
+</position>
+</mesh>
+</model>
+</asset>

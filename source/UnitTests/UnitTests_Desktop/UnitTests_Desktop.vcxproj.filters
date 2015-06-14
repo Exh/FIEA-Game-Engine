@@ -1,0 +1,309 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Tests">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Generated Source Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Test Classes">
+      <UniqueIdentifier>{4f285931-7658-45c2-af41-42b5c1659cce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Container Tests">
+      <UniqueIdentifier>{d94dcf64-7ad1-4dc7-9a0e-50f88ba8efdf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\Engine Tests">
+      <UniqueIdentifier>{e2d5154e-8cbb-4d55-a6cc-04b46452e6d3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Tests\XML Parsing">
+      <UniqueIdentifier>{2f7abb28-09b6-4de7-8e36-a0f1b4cd9e22}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Classes\Hashmap">
+      <UniqueIdentifier>{61abdff9-3f3a-47bc-ba09-6c05bd4272e6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Classes\Foo">
+      <UniqueIdentifier>{0cf5dd2c-e296-4255-8555-56391e1cde4c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Classes\Attributed">
+      <UniqueIdentifier>{5d117085-588f-462a-abbd-38244bc867ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Classes\XML Parsing">
+      <UniqueIdentifier>{1a706e92-1df7-4c60-9e15-18582eddbb44}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{d11270a5-466a-43fe-9657-61382f573894}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Classes\Factory">
+      <UniqueIdentifier>{8a4fc2cc-0544-491e-95ef-37a56ae1512e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Source Files\Done">
+      <UniqueIdentifier>{72f552d5-865d-4793-8530-21608cbc51bd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Source Files\Done\Containers">
+      <UniqueIdentifier>{5e8cdd45-4d4c-4b1a-a9da-7217d42248f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Source Files\Done\Attributed, datum, scope">
+      <UniqueIdentifier>{87ba0a2a-5204-4273-9ffe-1757194234e7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Source Files\Xml Parsing">
+      <UniqueIdentifier>{706a89bd-5cf4-487f-ba91-681f029cc512}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Generated Source Files\Factory">
+      <UniqueIdentifier>{b19f9a24-ebef-44d9-a61a-cedf052e04cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Classes\Entity">
+      <UniqueIdentifier>{1970018a-4bb7-4654-9193-a1cf1a220445}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Classes\Action">
+      <UniqueIdentifier>{cf48bc77-4406-4783-9fbb-7ae6ebe04c00}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Classes\Event">
+      <UniqueIdentifier>{038ddc72-6ea0-4f38-a164-df17cbc66cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Test Classes\Reaction">
+      <UniqueIdentifier>{2112837a-52c7-4035-b6c8-89bb50129e89}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Generated Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="FooFunctor.cpp">
+      <Filter>Test Classes\Hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="FooHash.cpp">
+      <Filter>Test Classes\Hashmap</Filter>
+    </ClCompile>
+    <ClCompile Include="AnotherFoo.cpp">
+      <Filter>Test Classes\Foo</Filter>
+    </ClCompile>
+    <ClCompile Include="Foo.cpp">
+      <Filter>Test Classes\Foo</Filter>
+    </ClCompile>
+    <ClCompile Include="ScalarAttributedFoo.cpp">
+      <Filter>Test Classes\Attributed</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorAttributedFoo.cpp">
+      <Filter>Test Classes\Attributed</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetParseHelper.cpp">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetSharedData.cpp">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="ModelParseHelper.cpp">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="BodyPartParseHelper.cpp">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="MeshParseHelper.cpp">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="PositionParseHelper.cpp">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="Kaijuu.cpp">
+      <Filter>Test Classes\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="Shujinko.cpp">
+      <Filter>Test Classes\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="HashMapTest.cpp">
+      <Filter>Generated Source Files\Done\Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="SListTest.cpp">
+      <Filter>Generated Source Files\Done\Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="VectorTest.cpp">
+      <Filter>Generated Source Files\Done\Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="StackTest.cpp">
+      <Filter>Generated Source Files\Done\Containers</Filter>
+    </ClCompile>
+    <ClCompile Include="DatumTestSuite.cpp">
+      <Filter>Generated Source Files\Done\Attributed, datum, scope</Filter>
+    </ClCompile>
+    <ClCompile Include="ScopeTestSuite.cpp">
+      <Filter>Generated Source Files\Done\Attributed, datum, scope</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlTableParseTestSuite.cpp">
+      <Filter>Generated Source Files\Xml Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="XmlParseMasterTestSuite.cpp">
+      <Filter>Generated Source Files\Xml Parsing</Filter>
+    </ClCompile>
+    <ClCompile Include="FactoryTestSuite.cpp">
+      <Filter>Generated Source Files\Factory</Filter>
+    </ClCompile>
+    <ClCompile Include="LockedChest.cpp">
+      <Filter>Test Classes\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="EntityTestSuite.cpp">
+      <Filter>Generated Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AttributedTestSuite.cpp">
+      <Filter>Generated Source Files\Done\Attributed, datum, scope</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoSaveSubscriber.cpp">
+      <Filter>Test Classes\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoSaveArgs.cpp">
+      <Filter>Test Classes\Event</Filter>
+    </ClCompile>
+    <ClCompile Include="EventTestSuite.cpp">
+      <Filter>Generated Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="ReactionTestSuite.cpp">
+      <Filter>Generated Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AsyncEventTestSuite.cpp">
+      <Filter>Generated Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="EnqueueActionEvent.cpp">
+      <Filter>Test Classes\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="EnqueueReaction.cpp">
+      <Filter>Test Classes\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="UnSubscribeReaction.cpp">
+      <Filter>Test Classes\Action</Filter>
+    </ClCompile>
+    <ClCompile Include="SubscribeReaction.cpp">
+      <Filter>Test Classes\Action</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="Main.h">
+      <Filter>Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="HashMapTest.h">
+      <Filter>Tests\Container Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="SListTest.h">
+      <Filter>Tests\Container Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="StackTest.h">
+      <Filter>Tests\Container Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="VectorTest.h">
+      <Filter>Tests\Container Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ScopeTestSuite.h">
+      <Filter>Tests\Engine Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="DatumTestSuite.h">
+      <Filter>Tests\Engine Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AttributedTestSuite.h">
+      <Filter>Tests\Engine Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="XmlParseMasterTestSuite.h">
+      <Filter>Tests\XML Parsing</Filter>
+    </CustomBuild>
+    <CustomBuild Include="XmlTableParseTestSuite.h">
+      <Filter>Tests\XML Parsing</Filter>
+    </CustomBuild>
+    <CustomBuild Include="FactoryTestSuite.h">
+      <Filter>Tests\Engine Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EntityTestSuite.h">
+      <Filter>Tests\Engine Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="TestSuiteAction.h">
+      <Filter>Tests\Engine Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="EventTestSuite.h">
+      <Filter>Tests\Engine Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ReactionTestSuite.h">
+      <Filter>Tests\Engine Tests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="AsyncEventTestSuite.h">
+      <Filter>Tests\Engine Tests</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="FooFunctor.h">
+      <Filter>Test Classes\Hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="FooHash.h">
+      <Filter>Test Classes\Hashmap</Filter>
+    </ClInclude>
+    <ClInclude Include="AnotherFoo.h">
+      <Filter>Test Classes\Foo</Filter>
+    </ClInclude>
+    <ClInclude Include="Foo.h">
+      <Filter>Test Classes\Foo</Filter>
+    </ClInclude>
+    <ClInclude Include="ScalarAttributedFoo.h">
+      <Filter>Test Classes\Attributed</Filter>
+    </ClInclude>
+    <ClInclude Include="VectorAttributedFoo.h">
+      <Filter>Test Classes\Attributed</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetParseHelper.h">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetSharedData.h">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="ModelParseHelper.h">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="MeshParseHelper.h">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="PositionParseHelper.h">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="BodyPartParseHelper.h">
+      <Filter>Test Classes\XML Parsing</Filter>
+    </ClInclude>
+    <ClInclude Include="Kaijuu.h">
+      <Filter>Test Classes\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="Shujinko.h">
+      <Filter>Test Classes\Factory</Filter>
+    </ClInclude>
+    <ClInclude Include="LockedChest.h">
+      <Filter>Test Classes\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoSaveSubscriber.h">
+      <Filter>Test Classes\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoSaveArgs.h">
+      <Filter>Test Classes\Event</Filter>
+    </ClInclude>
+    <ClInclude Include="EnqueueActionEvent.h">
+      <Filter>Test Classes\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="EnqueueReaction.h">
+      <Filter>Test Classes\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="UnSubscribeReaction.h">
+      <Filter>Test Classes\Action</Filter>
+    </ClInclude>
+    <ClInclude Include="SubscribeReaction.h">
+      <Filter>Test Classes\Action</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Xml Include="Data\AssetList.xml">
+      <Filter>Data</Filter>
+    </Xml>
+    <Xml Include="Data\TableDef.xml">
+      <Filter>Data</Filter>
+    </Xml>
+    <Xml Include="Data\WorldXml.xml">
+      <Filter>Data</Filter>
+    </Xml>
+    <Xml Include="Data\Reaction.xml">
+      <Filter>Data</Filter>
+    </Xml>
+  </ItemGroup>
+</Project>

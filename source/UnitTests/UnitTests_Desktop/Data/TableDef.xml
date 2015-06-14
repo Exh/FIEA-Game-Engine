@@ -1,0 +1,26 @@
+<table name="root">
+	<table name="nest1">
+		<table name="nest21" index="2">
+			<integer name="intValue1" value="10" />
+		</table>
+		<table name="nest22">
+			<integer name="intValue2" value="10" />
+		</table>
+	</table>
+
+	<table name="internalScalar">
+		<integer name="int_is" value="20" />
+		<float name="int_fs" value="10.5" />
+		<vector name="int_vs" value="(1,1,1,1)" />
+		<matrix name="int_ms" value="0" />
+		<string name="int_ss" value="cake" />
+	</table>
+
+	<table name="internalVector">
+		<integer name="int_iv" size="2">1;2</integer>
+		<float name="int_fv" size="3" value="1.1;2.2;3.3;-4.4" />
+		<vector name="int_vv" size="2">1;2</vector>
+		<matrix name="int_mv" size="4" value="1;0;1;0" />
+		<string name="int_sv" value="bear;mouse" />
+	</table>
+</table>

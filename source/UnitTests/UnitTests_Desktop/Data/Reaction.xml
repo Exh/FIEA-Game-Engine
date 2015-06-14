@@ -1,0 +1,23 @@
+<world name="world">
+	<sector name="sector">
+		<entity name="hero" class="Shujinko">
+			<action name="Start">
+				<integer name="Delay" index="0" value="1" />
+				<string name="Subtype" index="0" value="init" />
+			</action>
+			<action name="EnemyKill">
+				<string name="Subtype" index="0" value="enemy die" />
+			</action>
+		</entity>
+
+		<reaction name="EnemyKillReaction">
+			<string name="Subtype" index="0" value="enemy die" />
+			<decrement name="sub" />
+		</reaction>
+	</sector>
+
+	<reaction name="StartReaction">
+		<string name="Subtype" index="0" value="init" />
+		<increment name="add" />
+	</reaction>
+</world>
